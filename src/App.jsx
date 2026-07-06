@@ -9,9 +9,9 @@ const App = () => {
   const [selectedPost, setSelectedPost] = useState(null)
 
   // Environment variables
-  const apiUrl = import.meta.env.VITE_API_URL || 'https://jsonplaceholder.typicode.com'
-  const apiTimeout = parseInt(import.meta.env.VITE_API_TIMEOUT) || 5000
-  const environment = import.meta.env.VITE_ENVIRONMENT || 'development'
+  const apiUrl = import.meta.env.VITE_API_URL
+  const apiTimeout = parseInt(import.meta.env.VITE_API_TIMEOUT) 
+  const environment = import.meta.env.VITE_ENVIRONMENT
 
   // Create axios instance with config
   const axiosInstance = axios.create({
